@@ -3,7 +3,6 @@ import Link from "next/link";
 import { AiOutlineShopping } from "react-icons/ai";
 import { useStateContext } from "../context/StateContext";
 import Cart from "./Cart";
-import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
