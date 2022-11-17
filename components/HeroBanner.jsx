@@ -26,7 +26,7 @@ const HeroBanner = ({ heroBanner }) => {
           alt="headphones"
           className="hero-banner-image"
         />
-        <div>
+        <div className="btn-contianer-banner">
           <Link href={`/product/${product}`}>
             <button type="button">{buttonText}</button>
           </Link>
