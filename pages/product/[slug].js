@@ -9,7 +9,7 @@ import { urlFor, client } from "../../lib/client";
 import { Product } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 
-const productDetails = ({ product, products }) => {
+const ProductDetails = ({ product, products }) => {
   const [index, setIndex] = useState(0);
   const { incQty, decQty, qty, onAdd, setShowCart } = useStateContext();
   const { image, name, details, price } = product;
@@ -111,6 +111,7 @@ export const getStaticPaths = async () => {
       slug: product.slug.current,
     },
   }));
+
   return {
     paths,
     fallback: "blocking",
@@ -127,8 +128,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
   const bannerData = await client.fetch(bannerQuery);
 
   return {
-    props: { product, products },
+    props: { products, product },
   };
 };
 
-export default productDetails;
+export default ProductDetails;

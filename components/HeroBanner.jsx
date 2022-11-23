@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 // local
 import { urlFor } from "../lib/client";
+import bannerImage from "../assets/macbook pro m1 max.webp";
 
 const HeroBanner = ({ heroBanner }) => {
   const {
@@ -21,15 +23,22 @@ const HeroBanner = ({ heroBanner }) => {
         <h3>{midText}</h3>
         <h1>{largeText1}</h1>
         {largeText2}
-        <img
-          src={urlFor(image)}
+        <Image
+          src={bannerImage}
           alt="headphones"
+          width={700}
+          height={400}
           className="hero-banner-image"
         />
         <div className="btn-contianer-banner">
-          <Link href={`/product/${product}`}>
-            <button type="button">{buttonText}</button>
-          </Link>
+          {/* <Link href={`/product/${product}`}> */}
+          <button
+            type="button"
+            style={{ cursor: "default", backgroundColor: "gray" }}
+          >
+            {/* {buttonText} */} Hurry up!😍
+          </button>
+          {/* </Link> */}
           <div className="desc">
             <h5>Description</h5>
             <p>{desc}</p>

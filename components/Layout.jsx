@@ -7,9 +7,10 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Head>
-        <title>JS Mastery Store</title>
+        <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+        <title>Gadgets Pro</title>
       </Head>
-      <header>
+      <header style={{ position: "sticky", top: 0, zIndex: 9999 }}>
         <Navbar />
       </header>
       <main className="main-container">{children}</main>
