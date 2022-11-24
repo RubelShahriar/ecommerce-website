@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { AiOutlineShopping } from "react-icons/ai";
+import { AiOutlineShopping, AiOutlineMenu } from "react-icons/ai";
 import { useStateContext } from "../context/StateContext";
 import Cart from "./Cart";
 import logo from "../public/favicon.png";
@@ -31,7 +31,10 @@ const Navbar = () => {
               </div>
             </Link>
           </div>
-          <div style={{ display: "flex" }}>
+          <div
+            className="navbar-right-flex"
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <p className="cart-icon">New</p>
             <p className="cart-icon">Best Selling</p>
             <button
@@ -39,7 +42,7 @@ const Navbar = () => {
               className="cart-icon"
               onClick={() => setShowCart(true)}
             >
-              Cart{" "}
+              <span className="navbar-cart-text">Cart </span>
               <AiOutlineShopping
                 style={{
                   fontSize: "25px",

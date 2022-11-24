@@ -1,16 +1,23 @@
 import React from "react";
 // local
-import { HeroBanner, FooterBanner, Product, Banner1 } from "../components";
+import {
+  HeroBanner,
+  FooterBanner,
+  Product,
+  Banner1,
+  Categories,
+} from "../components";
+import { Brands } from "../components";
 import { client } from "../lib/client";
 
 const Home = ({ products, bannerData }) => {
   return (
     <>
       <HeroBanner heroBanner={bannerData?.length && bannerData[0]} />
-
+      <Categories />
       <div className="products-heading">
-        <h2>Best selling products</h2>
-        <p>Speakers of many variations</p>
+        <h2>Popular Products</h2>
+        <p>All popular trending products</p>
       </div>
 
       <div className="products-container">
@@ -23,7 +30,7 @@ const Home = ({ products, bannerData }) => {
 
       <div className="products-heading">
         <h2>Best selling products</h2>
-        <p>Speakers of many variations</p>
+        <p>Recommanded products for you</p>
       </div>
 
       <div className="products-container">
@@ -31,8 +38,7 @@ const Home = ({ products, bannerData }) => {
           <Product key={product._id} product={product} />
         ))}
       </div>
-
-      <FooterBanner footerBanner={bannerData && bannerData[0]} />
+      <Brands />
     </>
   );
 };

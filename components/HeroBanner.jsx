@@ -1,21 +1,10 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 // local
-import { urlFor } from "../lib/client";
-import bannerImage from "../assets/macbook pro m1 max.webp";
+import { macbook } from "../assets";
 
 const HeroBanner = ({ heroBanner }) => {
-  const {
-    smallText,
-    midText,
-    largeText1,
-    largeText2,
-    image,
-    product,
-    buttonText,
-    desc,
-  } = heroBanner;
+  const { smallText, midText, largeText1, largeText2, desc } = heroBanner;
   return (
     <div className="hero-banner-container">
       <div>
@@ -24,21 +13,22 @@ const HeroBanner = ({ heroBanner }) => {
         <h1>{largeText1}</h1>
         {largeText2}
         <Image
-          src={bannerImage}
+          src={macbook}
           alt="headphones"
           width={700}
           height={400}
           className="hero-banner-image"
         />
         <div className="btn-contianer-banner">
-          {/* <Link href={`/product/${product}`}> */}
           <button
             type="button"
-            style={{ cursor: "default", backgroundColor: "gray" }}
+            style={{
+              cursor: "default",
+              backgroundColor: "var(--bg-btn)",
+            }}
           >
-            {/* {buttonText} */} Hurry up!😍
+            Hurry up! 😍
           </button>
-          {/* </Link> */}
           <div className="desc">
             <h5>Description</h5>
             <p>{desc}</p>
