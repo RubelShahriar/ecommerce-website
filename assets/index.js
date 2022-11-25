@@ -19,4 +19,4 @@ export { default as oneplus } from "./oneplus.png";
 export { default as sony } from "./sony.png";
 export { default as xiaomi } from "./xiaomi.png";
 export { default as asus } from "./asus.jpeg";
-// export { default as macbookpro14inch } from "./macbookpro14inch.png";
+export { default as macbookpro14inch } from "./macbookpro14inch.png";
