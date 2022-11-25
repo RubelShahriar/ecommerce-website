@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 // local
-import { macbook } from "../assets";
+// import { macbookpro14inch } from "../assets";
 
 const HeroBanner = ({ heroBanner }) => {
   const { smallText, midText, largeText1, largeText2, desc } = heroBanner;
@@ -13,10 +13,10 @@ const HeroBanner = ({ heroBanner }) => {
         <h1>{largeText1}</h1>
         {largeText2}
         <Image
-          src={macbook}
+          src={""}
           alt="headphones"
-          width={700}
-          height={400}
+          width=""
+          height=""
           className="hero-banner-image"
         />
         <div className="btn-contianer-banner">
