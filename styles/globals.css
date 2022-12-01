@@ -191,9 +191,9 @@ span.text-red {
 }
 .hero-banner-image {
   position: absolute;
-  width: 600px;
-  height: 450px;
-  top: 25%;
+  width: 640px;
+  height: 500px;
+  top: 40%;
   left: 50%;
   transform: translateY(-50%);
 }
@@ -674,10 +674,10 @@ span.text-red {
     max-width: 960px;
   }
   .hero-banner-image {
-    width: 470px;
-    height: 300px;
-    top: 30%;
-    left: 50%;
+    width: 540px;
+    height: 380px;
+    top: 40%;
+    left: 45%;
   }
   .img-tag {
     width: 310px;
@@ -711,10 +711,10 @@ span.text-red {
     font-size: 40px;
   }
   .hero-banner-image {
-    width: 400px;
-    height: 280px;
-    top: 25%;
-    left: 40%;
+    width: 500px;
+    height: 400px;
+    top: 45%;
+    left: 35%;
   }
   .img-tag {
     width: 240px;
@@ -761,10 +761,10 @@ span.text-red {
     line-height: 1.2;
   }
   .hero-banner-image {
-    width: 300px;
-    height: 200px;
-    top: 25%;
-    right: -18px;
+    width: 400px;
+    height: 300px;
+    top: 30%;
+    left: 30%;
   }
   .hero-banner-container h1 {
     font-size: 50px;
