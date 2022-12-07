@@ -1,12 +1,6 @@
 import React from "react";
 // local
-import {
-  HeroBanner,
-  FooterBanner,
-  Product,
-  Banner1,
-  Categories,
-} from "../components";
+import { HeroBanner, Product, Banner1, Categories } from "../components";
 import { Brands } from "../components";
 import { client } from "../lib/client";
 
